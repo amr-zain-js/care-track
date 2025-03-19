@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcare_track=self.webpackChunkcare_track||[]).push([[113],{7717:(c,r,a)=>{a.r(r),a.d(r,{default:()=>s});var e=a(2524),t=a(6253),k=a(9343);const s=function(){return(0,k.jsx)(e.Fg,{to:`/care-track/${t.ym}`})}}}]);
+//# sourceMappingURL=113.4ae9ed98.chunk.js.map
