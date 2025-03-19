@@ -1,0 +1,21 @@
+
+
+
+/* ======================
+   Search Section
+   ====================== */
+.search-section {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 0.6rem;
+    margin: 11px auto;
+    background: #8f8f8f00;
+    width: fit-content;
+    max-width: 98%;
+    box-shadow: 1px 5px 16px -4.5px;
+    height: fit-content;
+}
+
+

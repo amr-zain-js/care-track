@@ -1,0 +1,35 @@
+
+
+/* Add to your CSS file */
+
+.card-hover-effect {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card-hover-effect a:hover{
+    text-decoration: underline!important;
+}
+
+/*med table*/
+.medicines-table th {
+    background-color: #0e4067 ;
+    color: white;
+    border-bottom: 2px solid #dee2e6;
+}
+.medicines-table thead th {
+    white-space: nowrap;
+    font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .medicines-table {
+        font-size: 0.85rem;
+    }
+    .medicine-mobile-sm {
+        padding: 0.35rem;
+    }
+}

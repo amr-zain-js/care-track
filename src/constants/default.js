@@ -1,0 +1,1 @@
+export const DEFAULT_IMG_URL = 'https://raw.githubusercontent.com/Amr-Zain/care_track/secondary/front-end/public/images/default.png';

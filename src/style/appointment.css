@@ -1,0 +1,129 @@
+/* ======================
+   Base Styles
+   ====================== */
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-blue-vesion2);
+    margin: 1rem;
+    margin-bottom: .25rem;
+    width: fit-content;
+    border-bottom: 1px solid;
+}
+.title a {
+    color: var(--main-blue-vesion2);
+}
+
+/* ======================
+   Layout Containers
+   ====================== */
+.appointments-slider {
+    position: relative;
+}
+
+.appointments-container {
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+    max-width: 95vw;
+    scroll-behavior: smooth;
+    padding: 1rem;
+}
+
+.appointments-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ======================
+   Appointment Components
+   ====================== */
+.appointment-col {
+    min-width: 300px;
+    padding: 0 15px;
+}
+
+.appointment-card {
+    width: 100%;
+    height: 100%;
+    min-width: 300px;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center bottom;
+    animation: cardEntrance 0.6s ease-out;
+    animation-fill-mode: backwards;
+}
+
+.appointment-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ======================
+   Row Layout Adjustments
+   ====================== */
+.appointments-container .row.flex-nowrap {
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding-bottom: 5px; /* Scroll spacing */
+}
+
+/* ======================
+   Responsive Design
+   ====================== */
+@media (max-width: 768px) {
+    .appointment-card {
+        min-width: 240px;
+    }
+    
+    .appointments-container {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .appointment-col {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .appointment-col {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .appointment-col {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+/* ======================
+   Utility Styles
+   ====================== */
+.loading-placeholder {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Optional: Add animation for when card appears */
+
